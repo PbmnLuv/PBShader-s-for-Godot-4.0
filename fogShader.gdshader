@@ -32,7 +32,9 @@ void fragment( )
     }
             
     vec4 finalMix = mix(new_image, vec4(1,1,1,1), alpha02);
-	finalMix = mix(finalMix, vec4(1,1,1,1), alpha02);
+	
+	//In case you wanna intensify the effect use the line below again
+	//finalMix = mix(finalMix, vec4(1,1,1,1), alpha02);
 	
 	ALBEDO = finalMix.rgb;
 }
